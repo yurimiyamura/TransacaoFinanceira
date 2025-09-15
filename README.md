@@ -27,3 +27,8 @@ Passos a implementar:
     - get_saldo: Retorna o saldo da conta de acordo com o "conta_id", caso não encontre, retorna None
     - atualizar: Atualiza a conta dentro da tabela de saldos
     - transferir: Verifica se a conta existe (se não, exibe um erro) e, se existir, verifica se possui saldo suficiente (se não, cancela a transação) e efetua a transferência
+
+3. Corrigir o problema das transações (Arquivo: "program.py")
+- Temos um erro lógico, onde a classe que executa a transação não atualiza as contas após alterar o seu saldo;
+- É necessário atualizar tanto a conta origem quanto a conta de destino.
+

@@ -50,6 +50,8 @@ class ExecutarTransacaoFinanceira(AcessoDados):
             conta_saldo_origem.saldo -= valor
             conta_saldo_destino.saldo += valor
 
+            self.atualizar(conta_saldo_origem)
+            self.atualizar(conta_saldo_destino)
 
             print(f"Transacao numero {correlation_id} foi efetivada com sucesso! "
                   f"Novos saldos: Conta Origem:{conta_saldo_origem.saldo} | Conta Destino:{conta_saldo_destino.saldo}")
