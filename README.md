@@ -32,3 +32,6 @@ Passos a implementar:
 - Temos um erro lógico, onde a classe que executa a transação não atualiza as contas após alterar o seu saldo;
 - É necessário atualizar tanto a conta origem quanto a conta de destino.
 
+4. Separar as classes em arquivos, adequando o código a boas práticas
+- Também foi ajustado um ponto da lógica do negócio, já que a relação de débito/crédito pertence ao domínio (classe:ContaSaldo) e não ao serviço (ExecutarTransacaoFinanceira)
+- Assim como as validações que foram inseridar em um novo método "validar_transferencia" que retorna um bool: se for true continua se n retorna e cancela a transferência
