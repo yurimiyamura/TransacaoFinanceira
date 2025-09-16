@@ -33,5 +33,10 @@ Passos a implementar:
 - É necessário atualizar tanto a conta origem quanto a conta de destino.
 
 4. Separar as classes em arquivos, adequando o código a boas práticas
-- Também foi ajustado um ponto da lógica do negócio, já que a relação de débito/crédito pertence ao domínio (classe:ContaSaldo) e não ao serviço (ExecutarTransacaoFinanceira)
-- Assim como as validações que foram inseridar em um novo método "validar_transferencia" que retorna um bool: se for true continua se n retorna e cancela a transferência
+- Também foi ajustado um ponto da lógica do negócio, já que a relação de débito/crédito pertence ao domínio (classe:ContaSaldo) e não ao serviço (ExecutarTransacaoFinanceira);
+- Assim como as validações que foram inseridar em um novo método "validar_transferencia" que retorna um bool: se for true continua se n retorna e cancela a transferência.
+
+5. Implementação dos testes unitários
+- Testes com relação a operações de débito, testando se as devidas estão funcionando e se as indevidas estão retornando o respectivo erro;
+- Testes para validar a existencia das contas e a atualização do saldo;
+- Testes relacionados a validação das transações efetuadas.
